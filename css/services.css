@@ -1,0 +1,204 @@
+body {
+    padding    : 0px;
+    margin     : 0px;
+    font-family: 'Lato', sans-serif;
+    overflow-x : hidden;
+}
+
+/* Training */
+#training {
+    padding-top   : 20vh;
+    padding-bottom: 40px;
+}
+
+#training h1 {
+    text-align    : center;
+    padding-bottom: 3vh;
+    font-size     : x-large;
+}
+
+#heading {
+    padding-bottom: 30px;
+    text-align    : center;
+    line-height   : 0.6;
+}
+
+#heading h1 {
+    margin: auto;
+}
+
+#heading span {
+    display : inline-block;
+    position: relative;
+}
+
+#heading span:before,
+#heading span:after {
+    content      : "";
+    position     : absolute;
+    height       : 5px;
+    border-bottom: 1px solid gray;
+    border-top   : 1px solid gray;
+    top          : 30%;
+    width        : 70%;
+}
+
+#heading span:before {
+    right       : 100%;
+    margin-right: 15px;
+}
+
+#heading span:after {
+    left       : 100%;
+    margin-left: 15px;
+}
+
+#training img {
+    width: 100%;
+}
+
+.hovereffect {
+    width     : 100%;
+    height    : 100%;
+    float     : left;
+    overflow  : hidden;
+    position  : relative;
+    text-align: center;
+    cursor    : default;
+    margin-inline: 0;
+}
+
+.hovereffect .overlay {
+    position          : absolute;
+    overflow          : hidden;
+    width             : 80%;
+    height            : 80%;
+    left              : 10%;
+    top               : 10%;
+    border-bottom     : 1px solid #FFF;
+    border-top        : 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition        : opacity 0.35s, transform 0.35s;
+    -webkit-transform : scale(0, 1);
+    -ms-transform     : scale(0, 1);
+    transform         : scale(0, 1);
+}
+
+.hovereffect:hover .overlay {
+    opacity          : 1;
+    filter           : alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform    : scale(1);
+    transform        : scale(1);
+}
+
+.hovereffect img {
+    display           : block;
+    position          : relative;
+    -webkit-transition: all 0.35s;
+    transition        : all 0.35s;
+}
+
+.hovereffect:hover img {
+    filter        : brightness(0.6);
+    -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+    text-align        : center;
+    position          : relative;
+    font-size         : 3vh;
+    background-color  : transparent;
+    color             : #FFF;
+    padding           : 1em 0;
+    opacity           : 0;
+    filter            : alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition        : opacity 0.35s, transform 0.35s;
+    -webkit-transform : translate3d(0, -100%, 0);
+    transform         : translate3d(0, -100%, 0);
+}
+
+.hovereffect:hover h2 {
+    opacity          : 1;
+    filter           : alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform        : translate3d(0, 0, 0);
+}
+
+
+.text {
+    padding: 0;
+    width  : max-content;
+}
+
+.text p {
+    padding         : 10px 5px;
+    background-color: rgb(50, 50, 50);
+    color           : whitesmoke;
+    text-align      : justify;
+    width           : 100%;
+}
+
+/* Services */
+#services {
+    padding-top     : 20px;
+    padding-bottom  : 20px;
+    background-image: url("../img/services-bg.jpg");
+    background-size: cover;
+}
+
+#services h1 {
+    color    : orangered;
+    font-size: 5vh;
+}
+
+#services img {
+    width: 100%;
+}
+
+#services p {
+    padding-top: 10px;
+    font-size  : 3vh;
+    text-align : justify;
+}
+
+@media screen and (max-width: 984px) {
+
+    #heading span:before,
+    #heading span:after {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 773px) {
+
+    #heading span:before,
+    #heading span:after {
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width: 581px) {
+
+    #heading span:before,
+    #heading span:after {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 531px) {
+
+    #heading span:before,
+    #heading span:after {
+        width: 0;
+    }
+    .hovereffect{
+        text-align: center;
+        padding-inline: 15%;
+    }
+    .card{
+        display: block;
+    }
+}

@@ -1,0 +1,58 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display         : -ms-flexbox;
+  display         : flex;
+  -ms-flex-align  : center;
+  align-items     : center;
+  padding-top     : 22vh;
+  padding-bottom  : 40px;
+  background: url("https://source.unsplash.com/1920x1080/?gym");
+}
+
+
+.form-signin {
+  padding                : 5vh 10vh;
+  margin                 : auto;
+  background             : rgba(248, 248, 248, 0.5);
+  box-shadow             : 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter        : blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius          : 10px;
+  border                 : 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position  : relative;
+  box-sizing: border-box;
+  height    : auto;
+  padding   : 10px;
+  font-size : 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom             : -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius : 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom          : 10px;
+  border-top-left-radius : 0;
+  border-top-right-radius: 0;
+}
+
+.fas {
+  font-size: 15vh;
+}

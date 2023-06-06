@@ -1,0 +1,131 @@
+body {
+    padding    : 0;
+    margin     : 0;
+    font-family: 'Lato', sans-serif;
+    overflow-x : hidden;
+}
+
+
+#heading {
+    margin-top    : 20vh;
+    padding-bottom: 30px;
+    text-align    : center;
+    line-height   : 0.6;
+}
+
+/* About Gym */
+#about {
+    display   : flex;
+    margin    : 5%;
+    text-align: justify;
+}
+
+#about img {
+    min-width: 100%;
+    border-radius: 2rem;
+}
+
+
+#heading p {
+    font-size: large;
+    color    : rgb(120, 120, 120);
+    text-align: center;
+}
+
+#heading span {
+    display : inline-block;
+    position: relative;
+}
+
+#heading span:before,
+#heading span:after {
+    content      : "";
+    position     : absolute;
+    height       : 5px;
+    border-bottom: 1px solid gray;
+    border-top   : 1px solid gray;
+    top          : 45%;
+    width        : 50%;
+}
+
+#heading span:before {
+    right       : 100%;
+    margin-right: 15px;
+}
+
+#heading span:after {
+    left       : 100%;
+    margin-left: 15px;
+}
+
+/* Team */
+.row{
+    text-align: center;
+}
+#team {
+    padding-top     : 40px;
+    padding-bottom  : 40px;
+    background-image: url("../img/team-bg.jpg");
+    background-size: cover;
+}
+
+#team h1 {
+    padding-bottom: 40px;
+    text-align    : center;
+}
+
+#team img {
+    height       : 25vh;
+    width        : 25vh;
+    border-radius: 50%;
+    filter       : grayscale(0.7);
+    transition   : all ease-in-out 0.5s;
+    margin-left  : 25px;
+}
+
+#team img:hover {
+    filter   : grayscale(0);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#names h3,
+#names p {
+    text-align   : center;
+}
+
+/* Trainer */
+#trainer {
+    padding-top   : 40px;
+    padding-bottom: 40px;
+    text-align    : center;
+}
+
+#trainer i {
+    padding-top   : 35px;
+    padding-bottom: 10px;
+    color         : orangered;
+}
+
+#trainer h1 {
+    color    : orangered;
+    font-size: 50px;
+}
+
+#trainer h3 {
+    color         : gray;
+    letter-spacing: 5px;
+    font-size     : 30px;
+}
+
+#trainer p {
+    font-size: 23px;
+}
+
+@media screen and (max-width: 420px) {
+
+    #heading span:before,
+    #heading span:after {
+        width: 20%;
+    }
+}

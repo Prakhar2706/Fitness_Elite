@@ -1,0 +1,10 @@
+#error {
+    width: 100%;
+    text-align: center;
+    color     : #ff2600;
+    background: #e6e99bc9;
+    display: none;
+    padding: 1vh 2vh;
+    border-radius: 2rem;
+    font-weight: bolder;
+}

@@ -1,0 +1,40 @@
+/* Footer */
+.fab{
+    font-size: x-large;
+    transition: 0.2s;
+}
+.fa-facebook:hover {
+    color: #3b5998;
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+.fa-google-plus:hover {
+    color: #DB4437;
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+.fa-snapchat:hover {
+    color: #FFFC00;
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    color: #1DA1F2;
+    transform: scale(1.8);
+    cursor: pointer;
+}

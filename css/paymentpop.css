@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin : 0;
+}
+
+.admin {
+    position               : absolute;
+    margin-block           : 20vh;
+    left                   : 50%;
+    transform              : translateX(-50%);
+    background             : rgba(248, 248, 248, 0.5);
+    box-shadow             : 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter        : blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius          : 10px;
+    border                 : 1px solid rgba(255, 255, 255, 0.18);
+    padding-bottom         : 3vh;
+    overflow               : auto;
+}
+
+.admin::-webkit-scrollbar {
+    height: 0.3rem;
+}
+
+
+.admin h2 {
+    text-align: center;
+}
+
+.admin table tr {
+    background: #fff;
+    text-align: center;
+    cursor    : no-drop;
+}
+
+.admin table tr td,
+.admin table tr th {
+    border-inline: solid #000;
+}
+
+
+.pop {
+    display                : none;
+    z-index                : 2;
+    position               : absolute;
+    top                    : 50%;
+    left                   : 50%;
+    transform              : translate(-50%, -50%);
+    background             : rgba(248, 248, 248, 0.5);
+    box-shadow             : 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter        : blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius          : 10px;
+    border                 : 1px solid rgba(255, 255, 255, 0.18);
+    max-height             : 60vh;
+    padding-bottom         : 3vh;
+    overflow               : auto;
+}
+
+.pop::-webkit-scrollbar {
+    height: 0.3rem;
+}
+
+.pop i {
+    float : right;
+    cursor: pointer;
+    color : blue;
+}
+
+.pop i:hover {
+    color: tomato;
+}
+
+.pop h2 {
+    text-align: center;
+}
+
+.pop table tr {
+    background: #fff;
+    text-align: center;
+    cursor    : no-drop;
+}
+
+.pop table tr td,
+.pop table tr th {
+    border-inline: solid #000;
+}
+
+@media screen and (max-width: 655px) {
+    .marg {
+        margin-inline: 10%;
+    }
+}
+
+@media screen and (max-width: 579px) {
+    .marg {
+        margin-inline: 20%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .marg {
+        margin-inline: 30%;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    .marg {
+        margin-inline: 50%;
+    }
+}
+
+@media screen and (max-width: 336px) {
+    .marg {
+        margin-inline: 80%;
+    }
+}
